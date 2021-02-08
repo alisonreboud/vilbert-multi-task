@@ -177,6 +177,10 @@ def ForwardModelsVal(args, task_cfg, device, task_id, batch, model, task_losses)
             target.cpu().detach().numpy()[:,0], 
             axis=0
         )[0]
+        print(" EXPERIMENT ISMAIL")
+        print(batch_score)
+        print(vil_score_prediction.cpu().detach().numpy())
+
 
 
     return float(loss), float(batch_score), batch_size
@@ -476,6 +480,8 @@ def LoadDatasets(args, task_cfg, ids, split="trainval"):
 
         task_datasets_train[task] = None
         if "train" in split:
+            print('Traaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaain')
+            print(task_name)
             task_datasets_train[task] = DatasetMapTrain[task_name](
                 task=task_cfg[task]["name"],
                 dataroot=task_cfg[task]["dataroot"],
@@ -497,6 +503,7 @@ def LoadDatasets(args, task_cfg, ids, split="trainval"):
 
         task_datasets_val[task] = None
         if "val" in split:
+            print(task_name)
             task_datasets_val[task] = DatasetMapTrain[task_name](
                 task=task_cfg[task]["name"],
                 dataroot=task_cfg[task]["dataroot"],
@@ -909,5 +916,9 @@ def EvaluatingModel(
         batch_score = compute_score_with_logits(vil_tri_prediction, target).sum()
     
     if task_id == "TASK19":
+        print("EVALUATING MODEL WITH ISMAIL")
+        print(vil_score_prediction.shape)
+        print(float(batch_score))
+        print("DONE EVALUATING MODEL WITH ISMAIL")
         return float(loss), float(batch_score), batch_size, results, others, target, vil_score_prediction
     return float(loss), float(batch_score), batch_size, results, others

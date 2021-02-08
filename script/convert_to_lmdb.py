@@ -45,4 +45,5 @@ if __name__ == "__main__":
             item["boxes"] = reader.item().get("bbox")
             item["features"] = reader.item().get("features")
             txn.put(img_id, pickle.dumps(item))
+        print(id_list)
         txn.put("keys".encode(), pickle.dumps(id_list))

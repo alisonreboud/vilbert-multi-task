@@ -58,7 +58,8 @@ def main():
                 working = False 
                 while not working:
                    try:
-                      frameIds = (cap.get(cv2.CAP_PROP_FRAME_COUNT) - 1) * np.array([(1.0+i) / (args.frames + 1) for i in range(args.frames)])
+                      frameIds = (cap.get(cv2.CAP_PROP_FRAME_COUNT) - 1) * np.array([(1+i) / (args.frames + 1) for i in range(args.frames)])
+                      print(cap.get(cv2.CAP_PROP_FRAME_COUNT) - 1) 
                       for i, fid in enumerate(frameIds):
                          cap.set(cv2.CAP_PROP_POS_FRAMES, int(fid))
                          ret, frame = cap.read()
@@ -70,8 +71,11 @@ def main():
                       working = True
                    except:
                       print('Exception with', cap.get(cv2.CAP_PROP_FRAME_COUNT), cap.get(cv2.CAP_PROP_FPS), frameIds)
-                      raise Exception('Exception')
+                      break 
+                      #print(file_name)
+                      #raise Exception('Exception')
 
 if __name__ == "__main__":
 
     main()
+

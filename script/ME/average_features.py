@@ -33,18 +33,23 @@ def main():
     count_ = {}
     trun = []
     for infile in tqdm.tqdm(infiles):
-        try:
-            reader = np.load(infile, allow_pickle=True)
-            fid = reader.item().get("image_id")
-            id_ = int(fid.split('_')[0])
-            s = int(fid.split('_')[1])
-            if id_ in count_:
-                count_[id_] += 1
-            else:
-                count_[id_] = 1
-        except:
-            trun.append(os.path.splitext(os.path.basename(infile))[0])
-            os.remove(infile)
+         reader = np.load(infile, allow_pickle=True)
+         fid = reader.item().get("image_id")
+         #print(fid)
+         #id_ = int(fid.split('_')[0])
+         id_=fid[:-2]
+         #print(id_)
+         s= fid[-1]
+         #print(s)
+         #s = int(fid.split('_')[1])
+         if id_ in count_:
+          count_[id_] += 1
+         else:
+          count_[id_] = 1
+        #except as e :
+            #print(str(e))
+            #trun.append(os.path.splitext(os.path.basename(infile))[0])
+            #os.remove(infile)
 
     print("{} errors were found.".format(len(trun)))
     print("{} video features available.".format(len(count_)))
@@ -54,8 +59,8 @@ def main():
     for infile in tqdm.tqdm(infiles):
         reader = np.load(infile, allow_pickle=True)
         fid = reader.item().get("image_id")
-        id_ = int(fid.split('_')[0])
-        s = int(fid.split('_')[1])
+        id_ = fid[:-2]
+        s = fid[-1]
         if id_ in feats:
             feats[id_]["image_id"] = str(id_)
             # perform an average of the existing feature and the new one

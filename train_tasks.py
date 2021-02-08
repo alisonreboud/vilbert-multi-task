@@ -306,7 +306,10 @@ def main():
     task_batch_size, task_num_iters, task_ids, task_datasets_train, task_datasets_val, task_dataloader_train, task_dataloader_val = LoadDatasets(
         args, task_cfg, args.tasks.split("-")
     )
-
+    print('AVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANT')
+    print( task_datasets_val)
+    print(task_datasets_train)
+    print('AAAAAAAAPRES')
     logdir = os.path.join(savePath, "logs")
     tbLogger = utils.tbLogger(
         logdir,
@@ -652,6 +655,7 @@ def evaluate(
 
     model.eval()
     for i, batch in enumerate(task_dataloader_val[task_id]):
+        print(i)
         loss, score, batch_size = ForwardModelsVal(
             args, task_cfg, device, task_id, batch, model, task_losses
         )

@@ -106,9 +106,9 @@ def main():
     args = parser.parse_args()
     
     try:
-        assert args.split in ["trainval", "test"]
+        assert args.split in ["trainval", "test","train"]
     except Exception as error:
-        print("Split must be trainval or test")
+        print("Split must be trainval, train or test")
         raise
     
     #deep_coptions_path = "/MediaEval/alto_titles_danny.csv"
@@ -130,9 +130,12 @@ def main():
             sample['caption'] = caption
             entries.append(sample)
     else:
-        df=pd.read_csv(args.captions_path)
+        df=pd.read_csv(args.captions_path,sep='\t')
         df= df.groupby('video_id').agg({'video_url':'first',
                              'description': ' '.join}).reset_index()
+        df['url']=df.video_url.str.split('/').str[-1]
+        df['url']=df.url.str.split('.mp4').str[0]
+
         print(df.description)
         for r in df.itertuples():
           #print(r)
@@ -140,22 +143,34 @@ def main():
           #vid_id,video_url, caption = line.split(','
           #vid_id = re.findall(r'\d+', vid_name)[0]
           #caption = caption.rstrip().replace('-', ' ')
-          sample['video_id'] = int(r.video_id)
+          #sample['video_id'] = int(r.video_id)
+          sample['video_id'] = r.url
+          sample['video_index']=int(r.video_id)
           sample['caption'] = r.description
           entries.append(sample)
 
-    train_df = pd.read_csv(args.gt_path)
-    score_dict = {}
-    for r in train_df.itertuples():
-        vid_id = r.video_id
-        vid_id = int(vid_id)
-        score_dict[vid_id] = [r.part_1_scores, r.part_2_scores]
+    #train_df = pd.read_csv(args.gt_path)
+    #score_dict = {}
+    #for r in train_df.itertuples():
+        #vid_id = r.video_id
+        #vid_id = int(vid_id)
+        #score_dict[vid_id] = [r.part_1_scores, r.part_2_scores]
+
+    #train_score_list = []
+    #for sample in entries:
+        #if sample['video_index'] in score_dict:
+            #sample['scores'] = score_dict[sample['video_index']]
+            #train_score_list.append(sample)
+
+
 
     train_score_list = []
     for sample in entries:
-        if sample['video_id'] in score_dict:
-            sample['scores'] = score_dict[sample['video_id']]
-            train_score_list.append(sample)
+        #if sample['video_index'] in score_dict:
+            #sample['scores'] = score_dict[sample['video_index']]
+     train_score_list.append(sample)
+
+
 
     tokenize(train_score_list, tokenizer, max_length=max_length)
     tensorize(train_score_list, split=args.split)
@@ -163,7 +178,7 @@ def main():
     #print(len(train_score_list))
     #print(train_score_list[0])
     
-    train_cache_path = os.path.join(dataroot, 'cache', 'ME2020' + '_' + args.split + '_' + str(max_length) + '_cleaned' + '.pkl')
+    train_cache_path = os.path.join(dataroot, 'cache', 'ME' + '_' + args.split + '_' + str(max_length) + '_cleaned' + '.pkl')
     print("Saving cache file with {} samples under {}".format(len(train_score_list), train_cache_path))
     cPickle.dump(train_score_list, open(train_cache_path, 'wb'))
 
