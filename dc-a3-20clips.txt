@@ -1,0 +1,355 @@
+00:00:00.000 00:00:01.600 bb-25-035:000200:t0 000200:23 A car is driving down a road
+00:00:01.600 00:00:04.000 bb-25-035:000200:t1 000200:83 A man is walking down a street and then he stops
+00:00:04.000 00:00:07.933 bb-25-035:000200:t2 000200:178 A car is driving down a road
+00:00:07.933 00:00:09.566 bb-25-035:000200:t3 000200:261 A man is driving a car and talking to someone
+00:00:09.567 00:00:12.067 bb-25-035:000200:t4 000200:324 A woman with long hair is smiling and talking
+00:00:12.067 00:00:15.700 bb-25-035:000200:t5 000200:416 A man is driving a car and looking at his side
+00:00:15.700 00:00:17.933 bb-25-035:000200:t6 000200:504 A woman is looking at something and smiling
+00:00:17.933 00:00:20.733 bb-25-035:000200:t7 000200:579 A man is driving a car and smiling
+00:00:20.733 00:00:25.733 bb-25-035:000200:t8 000200:696 A woman is looking at something and smiling
+00:00:25.733 00:00:31.666 bb-25-035:000200:t9 000200:860 A man is driving a car and smiling
+00:00:31.667 00:00:35.000 bb-25-035:000200:t10 000200:999 A woman is looking at something and smiling
+00:00:35.000 00:00:36.600 bb-25-035:000200:t11 000200:1073 A man is driving a car and talking to someone
+00:00:36.600 00:00:38.667 bb-25-035:000200:t12 000200:1129 A man with long hair is smiling and talking
+00:00:38.667 00:00:41.067 bb-25-035:000200:t13 000200:1196 A man is driving a car and talking to someone
+00:00:41.067 00:00:45.267 bb-25-035:000200:t14 000200:1295 A car is driving down a road
+00:00:45.267 00:00:48.867 bb-25-035:000200:t15 000200:1412 A man is walking away from a car
+00:00:48.867 00:00:56.800 bb-25-035:000200:t16 000200:1584 A man is driving a car with a woman in the back seat
+00:00:56.800 00:00:58.067 bb-25-035:000200:t17 000200:1723 A man is driving a car with a woman in the back seat
+00:00:58.067 00:01:00.267 bb-25-035:000200:t18 000200:1775 A man is walking away from a car
+00:01:00.267 00:01:05.434 bb-25-035:000200:t19 000200:1885 A car is driving down a road
+00:00:00.000 00:00:05.733 bb-25-035:000501:t0 000501:85 A parking lot full of cars and buses
+00:00:05.733 00:00:12.466 bb-25-035:000501:t1 000501:272 A man is driving a car and smiling
+00:00:12.467 00:00:18.367 bb-25-035:000501:t2 000501:462 A car is driving down the road
+00:00:18.367 00:00:24.567 bb-25-035:000501:t3 000501:643 A man is sitting in a car with his feet on the seat
+00:00:00.000 00:00:02.533 bb-25-035:000703:t0 000703:37 A shelf with a clock and a vase on top of it
+00:00:02.533 00:00:06.133 bb-25-035:000703:t1 000703:129 A person holding a cell phone in front of a box of doughnuts
+00:00:06.133 00:00:10.033 bb-25-035:000703:t2 000703:241 A man sitting at a desk working on a laptop
+00:00:10.033 00:00:11.466 bb-25-035:000703:t3 000703:321 A dog is standing on a skateboard in a room
+00:00:11.467 00:00:12.934 bb-25-035:000703:t4 000703:366 A man in a kitchen working on a laptop
+00:00:12.933 00:00:15.300 bb-25-035:000703:t5 000703:422 A dog is jumping up and down
+00:00:15.300 00:00:18.667 bb-25-035:000703:t6 000703:509 A man is sitting in a room and talking
+00:00:18.667 00:00:19.900 bb-25-035:000703:t7 000703:578 A dog is walking on the floor
+00:00:19.900 00:00:21.900 bb-25-035:000703:t8 000703:626 A man is looking at something and then looks away
+00:00:21.900 00:00:23.667 bb-25-035:000703:t9 000703:683 A dog is standing on a skateboard and a man is walking
+00:00:23.667 00:00:26.834 bb-25-035:000703:t10 000703:757 A man in a kitchen working on a laptop
+00:00:26.833 00:00:28.700 bb-25-035:000703:t11 000703:832 A dog is playing with a toy
+00:00:28.700 00:00:32.033 bb-25-035:000703:t12 000703:910 A man is looking at something and then looks away
+00:00:32.033 00:00:33.066 bb-25-035:000703:t13 000703:975 A dog is running around a house
+00:00:33.067 00:00:34.567 bb-25-035:000703:t14 000703:1014 A man is holding a cell phone in his hand
+00:00:34.567 00:00:36.100 bb-25-035:000703:t15 000703:1059 A person holding a cell phone in their hand
+00:00:36.100 00:00:38.033 bb-25-035:000703:t16 000703:1111 A man holding a cell phone up to his face
+00:00:38.033 00:00:40.300 bb-25-035:000703:t17 000703:1174 A dog is running through a field
+00:00:40.300 00:00:42.700 bb-25-035:000703:t18 000703:1244 A man holding a cell phone up to his face
+00:00:42.700 00:00:45.933 bb-25-035:000703:t19 000703:1329 A dog is playing with a toy
+00:00:45.933 00:00:47.733 bb-25-035:000703:t20 000703:1404 A man in a kitchen with a laptop and a sink
+00:00:47.733 00:00:48.933 bb-25-035:000703:t21 000703:1449 A dog is running around a house
+00:00:48.933 00:00:51.166 bb-25-035:000703:t22 000703:1500 A man is working on a laptop computer
+00:00:51.167 00:00:59.534 bb-25-035:000703:t23 000703:1660 A man is talking to a woman and she is smiling
+00:00:00.000 00:00:08.467 bb-25-035:003502:t0 003502:127 A room with a lot of tables and chairs
+00:00:08.467 00:00:15.967 bb-25-035:003502:t1 003502:366 A woman is sitting at a desk and talking
+00:00:15.967 00:00:17.200 bb-25-035:003502:t2 003502:497 A man is sitting on a couch and is smoking a cigarette
+00:00:17.200 00:00:20.233 bb-25-035:003502:t3 003502:561 A person is holding a cell phone in their hand
+00:00:20.233 00:00:22.233 bb-25-035:003502:t4 003502:636 A person holding a smart device in their hands
+00:00:22.233 00:00:25.266 bb-25-035:003502:t5 003502:711 A person holding a smart device in their hands
+00:00:25.267 00:00:27.434 bb-25-035:003502:t6 003502:790 A woman is talking to a man and he is talking to him
+00:00:27.433 00:00:28.766 bb-25-035:003502:t7 003502:842 A woman is talking to a man and he is talking to her
+00:00:28.767 00:00:30.634 bb-25-035:003502:t8 003502:891 A woman is drinking from a glass
+00:00:30.633 00:00:32.600 bb-25-035:003502:t9 003502:947 A man is driving a car and <unk> his head
+00:00:32.600 00:00:36.333 bb-25-035:003502:t10 003502:1033 A man is sitting in a car and smoking a cigarette
+00:00:36.333 00:00:38.166 bb-25-035:003502:t11 003502:1116 A woman is looking at a man and smiling
+00:00:38.167 00:00:39.834 bb-25-035:003502:t12 003502:1170 A woman is looking at a man and then he looks away
+00:00:39.833 00:00:42.833 bb-25-035:003502:t13 003502:1239 A man is walking through a door and then he stops
+00:00:42.833 00:00:46.900 bb-25-035:003502:t14 003502:1345 A man is looking at a woman and then she looks away
+00:00:00.000 00:00:07.867 bb-25-035:004001:t0 004001:118 A man is dancing in a room with a lot of lights
+00:00:07.867 00:00:10.134 bb-25-035:004001:t1 004001:270 A clock on a wall above a window
+00:00:10.133 00:00:14.633 bb-25-035:004001:t2 004001:370 A woman is walking down a hallway with a serious look on her face
+00:00:14.633 00:00:17.733 bb-25-035:004001:t3 004001:484 A man is walking down a hallway and then stops
+00:00:17.733 00:00:19.933 bb-25-035:004001:t4 004001:564 A woman is walking down a hallway and then stops
+00:00:19.933 00:00:27.533 bb-25-035:004001:t5 004001:711 A woman in a black dress is walking down a hallway
+00:00:27.533 00:00:29.266 bb-25-035:004001:t6 004001:851 A man is walking through a room with a lot of <unk>
+00:00:29.267 00:00:31.634 bb-25-035:004001:t7 004001:913 A woman is walking down a hallway with a man
+00:00:31.633 00:00:34.333 bb-25-035:004001:t8 004001:988 A man is looking at a woman and then she looks away
+00:00:34.333 00:00:35.800 bb-25-035:004001:t9 004001:1051 A man is dancing in front of a woman
+00:00:35.800 00:00:37.233 bb-25-035:004001:t10 004001:1095 A man is walking and smiling at something
+00:00:37.233 00:00:38.333 bb-25-035:004001:t11 004001:1132 A man and woman are kissing in a crowded room
+00:00:38.333 00:00:40.000 bb-25-035:004001:t12 004001:1174 A man in a suit is walking down a hallway
+00:00:40.000 00:00:42.400 bb-25-035:004001:t13 004001:1235 A woman is talking to a man and he is talking to her
+00:00:42.400 00:00:47.767 bb-25-035:004001:t14 004001:1352 A man is smiling and laughing at something
+00:00:47.767 00:00:50.267 bb-25-035:004001:t15 004001:1470 A man and a woman are walking down a hallway
+00:00:50.267 00:00:52.467 bb-25-035:004001:t16 004001:1541 A man is walking through a room with a lot of people
+00:00:52.467 00:00:55.434 bb-25-035:004001:t17 004001:1618 A man is wearing a hat and smiling
+00:00:55.433 00:00:57.666 bb-25-035:004001:t18 004001:1695 A man is walking through a room with a woman
+00:00:57.667 00:00:59.600 bb-25-035:004001:t19 004001:1758 A man is walking down a hallway and then falls
+00:00:59.600 00:01:05.733 bb-25-035:004001:t20 004001:1879 A woman is sitting on a bed and talking
+00:01:05.733 00:01:07.233 bb-25-035:004001:t21 004001:1993 A man is walking in a room with a lot of people
+00:01:07.233 00:01:10.200 bb-25-035:004001:t22 004001:2060 A woman is sitting on a couch and talking
+00:01:10.200 00:01:13.133 bb-25-035:004001:t23 004001:2149 A man is walking in a room with a lot of people
+00:01:13.133 00:01:17.066 bb-25-035:004001:t24 004001:2252 A woman is walking down a hallway and then she stops
+00:01:17.067 00:01:19.434 bb-25-035:004001:t25 004001:2347 A man is walking in a room with a lot of people
+00:01:19.433 00:01:21.033 bb-25-035:004001:t26 004001:2406 A woman is dancing in a room
+00:01:21.033 00:01:23.400 bb-25-035:004001:t27 004001:2465 A man is looking at something and then looks away
+00:01:23.400 00:01:26.267 bb-25-035:004001:t28 004001:2545 A woman is sitting on a bed and talking
+00:01:26.267 00:01:28.800 bb-25-035:004001:t29 004001:2625 A man is dancing in a room with a lot of people
+00:00:00.000 00:00:13.733 bb-25-035:004100:t0 004100:205 A man is looking at something and then looks up
+00:00:13.733 00:00:15.066 bb-25-035:004100:t1 004100:431 A man is hugging a woman and kissing her
+00:00:15.067 00:00:21.667 bb-25-035:004100:t2 004100:551 A man is sitting on a couch and talking
+00:00:21.667 00:00:23.367 bb-25-035:004100:t3 004100:675 A man is sitting on a sofa and is talking to a woman
+00:00:23.367 00:00:29.267 bb-25-035:004100:t4 004100:789 A man is sitting on a bed and smiling
+00:00:29.267 00:00:36.100 bb-25-035:004100:t5 004100:980 A man is sitting on a bed and is smiling
+00:00:36.100 00:00:39.767 bb-25-035:004100:t6 004100:1138 A man is sitting on a couch and is dancing
+00:00:39.767 00:00:42.134 bb-25-035:004100:t7 004100:1228 A man is dancing in a room with a woman
+00:00:42.133 00:00:43.600 bb-25-035:004100:t8 004100:1285 A man is laying on a bed and talking
+00:00:43.600 00:00:47.067 bb-25-035:004100:t9 004100:1360 A man is laying on a bed and smiling
+00:00:47.067 00:00:56.967 bb-25-035:004100:t10 004100:1560 A man is lying on a bed and smiling
+00:00:56.967 00:00:58.200 bb-25-035:004100:t11 004100:1727 A person is laying down on a bed
+00:00:58.200 00:01:00.533 bb-25-035:004100:t12 004100:1780 A person is laying on a bed and talking
+00:01:00.533 00:01:02.366 bb-25-035:004100:t13 004100:1842 A person is putting their hand on their face
+00:01:02.367 00:01:04.334 bb-25-035:004100:t14 004100:1900 A man is sitting on a couch and talking
+00:00:00.000 00:00:00.867 bb-25-035:004303:t0 004303:13 A man is sitting in a chair with a laptop
+00:00:00.867 00:00:02.867 bb-25-035:004303:t1 004303:56 A man is playing a keyboard and a woman is playing a guitar
+00:00:02.867 00:00:08.167 bb-25-035:004303:t2 004303:165 A man is sitting on a sofa and is talking to another man
+00:00:08.167 00:00:11.167 bb-25-035:004303:t3 004303:290 A man is talking to a woman and she is smiling
+00:00:11.167 00:00:13.434 bb-25-035:004303:t4 004303:369 A man is sitting on a couch and smoking a cigarette
+00:00:13.433 00:00:14.666 bb-25-035:004303:t5 004303:420 A man is looking at something and then looks away
+00:00:14.667 00:00:16.834 bb-25-035:004303:t6 004303:472 A man is sitting on a couch and smoking a cigarette
+00:00:16.833 00:00:19.933 bb-25-035:004303:t7 004303:550 A man is talking to a woman and she is smiling
+00:00:19.933 00:00:27.033 bb-25-035:004303:t8 004303:703 A man is sitting on a couch and smoking a cigarette
+00:00:27.033 00:00:28.566 bb-25-035:004303:t9 004303:833 A man is talking to a woman and she is smiling
+00:00:28.567 00:00:29.667 bb-25-035:004303:t10 004303:873 A man is putting his hand on a woman s face
+00:00:29.667 00:00:31.434 bb-25-035:004303:t11 004303:916 A man is dancing in a room with a lot of people
+00:00:31.433 00:00:32.600 bb-25-035:004303:t12 004303:959 A group of people standing around a tv
+00:00:32.600 00:00:33.800 bb-25-035:004303:t13 004303:996 A man is looking at a woman and then she looks away
+00:00:33.800 00:00:35.167 bb-25-035:004303:t14 004303:1034 A man is looking at something and smiling
+00:00:35.167 00:00:36.867 bb-25-035:004303:t15 004303:1080 A man is walking down a hallway with a woman
+00:00:36.867 00:00:40.267 bb-25-035:004303:t16 004303:1157 A man is walking through a room with a lot of people
+00:00:40.267 00:00:44.100 bb-25-035:004303:t17 004303:1265 A window with a view of a window with a bird flying over it
+00:00:00.000 00:00:01.133 bb-25-035:100900:t0 100900:16 A young man is talking and smiling while sitting in a chair
+00:00:01.133 00:00:04.133 bb-25-035:100900:t1 100900:78 A man is looking at a woman and then he looks away
+00:00:04.133 00:00:07.633 bb-25-035:100900:t2 100900:175 A man is holding a baby and smiling
+00:00:07.633 00:00:14.566 bb-25-035:100900:t3 100900:332 A man is talking to a woman and she is smiling
+00:00:14.567 00:00:18.634 bb-25-035:100900:t4 100900:498 A man is looking at a woman and she is talking to him
+00:00:18.633 00:00:25.066 bb-25-035:100900:t5 100900:654 A man is sitting in a chair and talking
+00:00:25.067 00:00:27.234 bb-25-035:100900:t6 100900:784 A man is looking at a woman and then he looks away
+00:00:27.233 00:00:29.733 bb-25-035:100900:t7 100900:853 A man is talking to a woman and she is smiling
+00:00:29.733 00:00:34.800 bb-25-035:100900:t8 100900:967 A man is looking at a woman and then he looks away
+00:00:34.800 00:00:35.967 bb-25-035:100900:t9 100900:1061 A man is talking to a woman and she is smiling
+00:00:35.967 00:00:37.400 bb-25-035:100900:t10 100900:1100 A man wearing a hat is talking and smiling
+00:00:37.400 00:00:39.600 bb-25-035:100900:t11 100900:1154 A man is smiling and laughing while holding a microphone
+00:00:39.600 00:00:46.833 bb-25-035:100900:t12 100900:1296 A man is sitting on a couch and he is eating
+00:00:46.833 00:00:50.266 bb-25-035:100900:t13 100900:1455 A man is talking and smiling while holding a cup
+00:00:50.267 00:00:52.467 bb-25-035:100900:t14 100900:1541 A person is putting a pair of scissors on a table
+00:00:52.467 00:00:53.934 bb-25-035:100900:t15 100900:1596 A man is holding a box and then <unk>
+00:00:53.933 00:00:55.600 bb-25-035:100900:t16 100900:1642 A man is talking and smiling while holding a cup
+00:00:55.600 00:00:59.067 bb-25-035:100900:t17 100900:1720 A woman is talking to a man and he is smiling
+00:00:59.067 00:01:02.667 bb-25-035:100900:t18 100900:1826 A man is talking and smiling while wearing a hat
+00:01:02.667 00:01:09.467 bb-25-035:100900:t19 100900:1982 A woman is sitting on a bed and talking
+00:01:09.467 00:01:17.834 bb-25-035:100900:t20 100900:2209 A man is talking and smiling while wearing a hat
+00:01:17.833 00:01:22.466 bb-25-035:100900:t21 100900:2403 A woman is sitting on a couch and talking
+00:01:22.467 00:01:24.734 bb-25-035:100900:t22 100900:2508 A man is holding a cell phone in his hand
+00:01:24.733 00:01:27.233 bb-25-035:100900:t23 100900:2578 A woman is holding her hair and smiling
+00:00:00.000 00:00:00.900 bb-25-035:101803:t0 101803:13 A cat is playing with a toy
+00:00:00.900 00:00:08.333 bb-25-035:101803:t1 101803:138 A man is walking down a hallway and then falls
+00:00:08.333 00:00:13.466 bb-25-035:101803:t2 101803:326 A row of metal boats sitting on top of a wooden floor
+00:00:13.467 00:00:19.400 bb-25-035:101803:t3 101803:492 A clock tower with a clock on each of it s sides
+00:00:19.400 00:00:25.900 bb-25-035:101803:t4 101803:679 A man is standing in front of a large clock
+00:00:25.900 00:00:30.533 bb-25-035:101803:t5 101803:846 A man is looking at a woman and she is talking to him
+00:00:30.533 00:00:34.000 bb-25-035:101803:t6 101803:967 A woman is sitting on a chair and then she falls down
+00:00:34.000 00:00:35.133 bb-25-035:101803:t7 101803:1036 A man is jumping on a bed and falls
+00:00:35.133 00:00:36.666 bb-25-035:101803:t8 101803:1076 A woman is kissing a man s hand
+00:00:36.667 00:00:39.034 bb-25-035:101803:t9 101803:1135 A man is looking at a woman and she looks away
+00:00:39.033 00:00:41.433 bb-25-035:101803:t10 101803:1206 A man is jumping on a chair and then falls
+00:00:41.433 00:00:48.733 bb-25-035:101803:t11 101803:1351 A woman is kissing a man s hand
+00:00:48.733 00:00:56.033 bb-25-035:101803:t12 101803:1570 A man is dancing in front of a christmas tree
+00:00:56.033 00:00:57.466 bb-25-035:101803:t13 101803:1701 A man is jumping on a stage and falls
+00:00:57.467 00:00:58.600 bb-25-035:101803:t14 101803:1740 A man is jumping on a trampoline and falls
+00:00:58.600 00:01:00.333 bb-25-035:101803:t15 101803:1783 A man is jumping off of a building
+00:01:00.333 00:01:01.833 bb-25-035:101803:t16 101803:1831 A plane flies through the sky as it flies through the sky
+00:00:00.000 00:00:03.500 bb-25-035:102404:t0 102404:52 A man is looking at a woman and she is talking
+00:00:03.500 00:00:08.700 bb-25-035:102404:t1 102404:182 A man is looking at a woman and she is talking to him
+00:00:08.700 00:00:10.233 bb-25-035:102404:t2 102404:283 A man is holding a gun and shooting a gun
+00:00:10.233 00:00:13.133 bb-25-035:102404:t3 102404:349 A man is looking at a woman and then he looks away
+00:00:13.133 00:00:18.133 bb-25-035:102404:t4 102404:468 A man is sitting on a couch and is smoking a cigarette
+00:00:18.133 00:00:29.200 bb-25-035:102404:t5 102404:709 A man is looking at something and then looks away
+00:00:29.200 00:00:31.533 bb-25-035:102404:t6 102404:910 A man is kissing a woman on the cheek
+00:00:31.533 00:00:33.500 bb-25-035:102404:t7 102404:974 A man is looking at a woman and then she looks away
+00:00:33.500 00:00:35.333 bb-25-035:102404:t8 102404:1032 A man is kissing a woman on the cheek
+00:00:00.000 00:00:01.133 bb-25-035:102706:t0 102706:16 A woman is talking to a man and he is smiling
+00:00:01.133 00:00:03.300 bb-25-035:102706:t1 102706:65 A man is playing a piano and singing
+00:00:03.300 00:00:04.867 bb-25-035:102706:t2 102706:122 A man is laying on a bed with a woman
+00:00:04.867 00:00:11.234 bb-25-035:102706:t3 102706:241 A man is dancing in a room with a lot of people
+00:00:11.233 00:00:13.033 bb-25-035:102706:t4 102706:363 A man is sitting on a bed with a laptop
+00:00:13.033 00:00:15.533 bb-25-035:102706:t5 102706:427 A man is walking through a room with a woman
+00:00:15.533 00:00:17.466 bb-25-035:102706:t6 102706:494 A shirtless man is dancing in a bathroom
+00:00:17.467 00:00:19.300 bb-25-035:102706:t7 102706:551 A shirtless man is dancing in a room
+00:00:19.300 00:00:21.633 bb-25-035:102706:t8 102706:613 A man is sitting on a bed with a laptop
+00:00:21.633 00:00:25.766 bb-25-035:102706:t9 102706:710 A man is sitting on a couch and is smiling
+00:00:25.767 00:00:27.900 bb-25-035:102706:t10 102706:804 A woman is dancing in a room
+00:00:27.900 00:00:28.967 bb-25-035:102706:t11 102706:853 A man is sitting on a bed with a woman
+00:00:28.967 00:00:32.900 bb-25-035:102706:t12 102706:927 A woman is dancing in a room
+00:00:32.900 00:00:35.633 bb-25-035:102706:t13 102706:1027 A woman is dancing in a room
+00:00:35.633 00:00:37.066 bb-25-035:102706:t14 102706:1089 A man is sitting on a bed with a woman
+00:00:37.067 00:00:38.834 bb-25-035:102706:t15 102706:1138 A woman is dancing in a room
+00:00:38.833 00:00:40.900 bb-25-035:102706:t16 102706:1195 A man is sitting on a bed with a woman
+00:00:40.900 00:00:43.033 bb-25-035:102706:t17 102706:1258 A man is dancing in a room
+00:00:43.033 00:00:47.366 bb-25-035:102706:t18 102706:1355 A man is sitting on a bed and smiling
+00:00:47.367 00:00:52.067 bb-25-035:102706:t19 102706:1491 A woman is holding a phone and talking to someone
+00:00:52.067 00:00:54.734 bb-25-035:102706:t20 102706:1602 A man is dancing in a room with a lot of people
+00:00:54.733 00:00:56.766 bb-25-035:102706:t21 102706:1671 A man is sitting on a bed and smiling
+00:00:56.767 00:01:01.100 bb-25-035:102706:t22 102706:1767 A shirtless man is dancing in a room
+00:01:01.100 00:01:03.233 bb-25-035:102706:t23 102706:1864 A man is sitting on a couch and talking
+00:01:03.233 00:01:05.300 bb-25-035:102706:t24 102706:1927 A man laying on a bed with a laptop
+00:01:05.300 00:01:12.333 bb-25-035:102706:t25 102706:2064 A shirtless man is talking to a woman
+00:01:12.333 00:01:15.300 bb-25-035:102706:t26 102706:2213 A man is sitting on a couch and talking
+00:01:15.300 00:01:17.733 bb-25-035:102706:t27 102706:2295 A shirtless man is dancing in a room
+00:01:17.733 00:01:20.766 bb-25-035:102706:t28 102706:2376 A man is lying on a bed and talking
+00:01:20.767 00:01:27.034 bb-25-035:102706:t29 102706:2517 A man laying on a bed with a laptop
+00:01:27.033 00:01:30.333 bb-25-035:102706:t30 102706:2659 A woman is dancing in a room
+00:01:30.333 00:01:40.633 bb-25-035:102706:t31 102706:2863 A man is sitting on a bed with a woman
+00:01:40.633 00:01:42.766 bb-25-035:102706:t32 102706:3050 A man is dancing in a kitchen
+00:00:00.000 00:00:03.167 bb-25-035:103311:t0 103311:47 A table and chairs sitting in front of a window
+00:00:03.167 00:00:06.567 bb-25-035:103311:t1 103311:146 A man is playing a game of tennis
+00:00:06.567 00:00:08.000 bb-25-035:103311:t2 103311:218 A person holding a camera in a bathroom
+00:00:08.000 00:00:08.867 bb-25-035:103311:t3 103311:253 A man in a suit is walking down a street
+00:00:08.867 00:00:09.967 bb-25-035:103311:t4 103311:282 A person holding a camera in a bathroom
+00:00:09.967 00:00:12.800 bb-25-035:103311:t5 103311:341 A man is smiling and laughing while wearing a white shirt
+00:00:12.800 00:00:15.833 bb-25-035:103311:t6 103311:429 A man is wearing a suit and a tie
+00:00:15.833 00:00:18.066 bb-25-035:103311:t7 103311:507 A man in a suit is sitting on a bench
+00:00:18.067 00:00:19.934 bb-25-035:103311:t8 103311:570 A person holding a camera while standing in front of a mirror
+00:00:19.933 00:00:21.533 bb-25-035:103311:t9 103311:621 A man taking a picture of himself in the mirror
+00:00:21.533 00:00:23.133 bb-25-035:103311:t10 103311:669 A woman is eating a sandwich and smiling
+00:00:23.133 00:00:24.833 bb-25-035:103311:t11 103311:718 A man in a suit is standing in front of a window
+00:00:24.833 00:00:26.666 bb-25-035:103311:t12 103311:771 A person holding a camera in front of a mirror
+00:00:26.667 00:00:28.234 bb-25-035:103311:t13 103311:823 A man is walking and smiling while holding a microphone
+00:00:28.233 00:00:32.433 bb-25-035:103311:t14 103311:909 A man in a suit is walking down a street
+00:00:32.433 00:00:37.066 bb-25-035:103311:t15 103311:1041 A man in a green shirt is standing in front of a window
+00:00:37.067 00:00:39.234 bb-25-035:103311:t16 103311:1144 A man is walking down a street with a surfboard
+00:00:39.233 00:00:40.533 bb-25-035:103311:t17 103311:1195 A man is sitting on a bench and smiling
+00:00:40.533 00:00:43.633 bb-25-035:103311:t18 103311:1261 A man is walking down a street with a surfboard
+00:00:43.633 00:00:45.566 bb-25-035:103311:t19 103311:1337 A man is walking down a hallway with a woman
+00:00:45.567 00:00:46.667 bb-25-035:103311:t20 103311:1383 A person is pouring a drink into a glass
+00:00:46.667 00:00:49.367 bb-25-035:103311:t21 103311:1440 A man in a suit is walking through a forest
+00:00:49.367 00:00:50.600 bb-25-035:103311:t22 103311:1499 A man holding a camera while standing in front of a mirror
+00:00:50.600 00:00:52.567 bb-25-035:103311:t23 103311:1547 A man is holding a microphone and singing
+00:00:52.567 00:00:55.234 bb-25-035:103311:t24 103311:1617 A man is walking down a street and then he stops
+00:00:55.233 00:00:56.566 bb-25-035:103311:t25 103311:1676 A man is walking and then he <unk> his hands
+00:00:00.000 00:00:01.067 bb-25-035:103312:t0 103312:16 A woman is talking to a man and smiling
+00:00:01.067 00:00:04.267 bb-25-035:103312:t1 103312:80 A man and a woman are kissing in a forest
+00:00:04.267 00:00:09.300 bb-25-035:103312:t2 103312:203 A man is dancing in front of a woman
+00:00:09.300 00:00:11.100 bb-25-035:103312:t3 103312:306 A man is looking at a woman and smiling
+00:00:11.100 00:00:13.767 bb-25-035:103312:t4 103312:373 A man and a woman are kissing in a dark room
+00:00:13.767 00:00:19.500 bb-25-035:103312:t5 103312:498 A man is looking at something and then looks away
+00:00:19.500 00:00:21.600 bb-25-035:103312:t6 103312:616 A man and a woman are kissing in a room
+00:00:21.600 00:00:23.667 bb-25-035:103312:t7 103312:679 A man is looking at something and then looks away
+00:00:23.667 00:00:28.767 bb-25-035:103312:t8 103312:786 A woman is looking at something and smiling
+00:00:28.767 00:00:29.967 bb-25-035:103312:t9 103312:881 A woman is looking at a man and smiling
+00:00:29.967 00:00:32.634 bb-25-035:103312:t10 103312:939 A man and a woman are kissing in a room
+00:00:32.633 00:00:40.900 bb-25-035:103312:t11 103312:1102 A man and a woman are kissing each other
+00:00:40.900 00:00:43.833 bb-25-035:103312:t12 103312:1270 A man is talking to a woman and she is smiling
+00:00:00.000 00:00:01.300 bb-25-035:200310:t0 200310:19 A cat is playing with a toy
+00:00:01.300 00:00:04.767 bb-25-035:200310:t1 200310:91 A man is sitting in a chair and talking to a woman
+00:00:04.767 00:00:09.600 bb-25-035:200310:t2 200310:215 A man is sitting in a chair and smoking a cigarette
+00:00:09.600 00:00:16.167 bb-25-035:200310:t3 200310:386 A man is dancing in front of a woman
+00:00:16.167 00:00:20.600 bb-25-035:200310:t4 200310:551 A man is dancing in front of a woman
+00:00:20.600 00:00:22.000 bb-25-035:200310:t5 200310:638 A plate with a piece of chocolate cake and a fork
+00:00:22.000 00:00:24.100 bb-25-035:200310:t6 200310:691 A man is looking at something and then looks away
+00:00:24.100 00:00:25.633 bb-25-035:200310:t7 200310:745 A man is dancing in a room with a lot of people
+00:00:25.633 00:00:28.133 bb-25-035:200310:t8 200310:805 A man is walking through a room and then he stops
+00:00:28.133 00:00:31.300 bb-25-035:200310:t9 200310:890 A man is sitting on a couch and talking
+00:00:00.000 00:00:00.967 bb-25-035:200609:t0 200609:14 A woman is dancing in front of a mirror
+00:00:00.967 00:00:09.567 bb-25-035:200609:t1 200609:158 A man is dancing in front of a christmas tree
+00:00:09.567 00:00:10.600 bb-25-035:200609:t2 200609:302 A man is dancing in front of a christmas tree
+00:00:10.600 00:00:12.967 bb-25-035:200609:t3 200609:353 A man is singing and dancing in front of a crowd
+00:00:12.967 00:00:14.734 bb-25-035:200609:t4 200609:415 A vase with flowers in it is sitting on a table
+00:00:14.733 00:00:17.666 bb-25-035:200609:t5 200609:485 A man in a suit is smiling and talking
+00:00:17.667 00:00:19.167 bb-25-035:200609:t6 200609:552 A man is playing a piano and singing
+00:00:19.167 00:00:22.667 bb-25-035:200609:t7 200609:627 A man is walking in a room with a <unk>
+00:00:22.667 00:00:25.634 bb-25-035:200609:t8 200609:724 A man is looking at a woman and then she looks away
+00:00:25.633 00:00:29.800 bb-25-035:200609:t9 200609:830 A man is taking a picture of a woman in a bathroom
+00:00:29.800 00:00:34.200 bb-25-035:200609:t10 200609:959 A man in a suit is smiling and talking
+00:00:34.200 00:00:35.667 bb-25-035:200609:t11 200609:1048 A woman is dancing in a bathroom
+00:00:35.667 00:00:39.034 bb-25-035:200609:t12 200609:1120 A man is dancing in a room with a woman
+00:00:39.033 00:00:43.400 bb-25-035:200609:t13 200609:1235 A man is holding a woman s hand and kisses her
+00:00:43.400 00:00:58.533 bb-25-035:200609:t14 200609:1528 A man is talking to another man and he is talking to him
+00:00:00.000 00:00:01.500 bb-25-035:201313:t0 201313:22 A woman is doing a handstand on a mat
+00:00:01.500 00:00:02.767 bb-25-035:201313:t1 201313:64 A woman is walking down the street with a black dress
+00:00:02.767 00:00:04.367 bb-25-035:201313:t2 201313:107 A man is walking and smiling while sitting in a car
+00:00:04.367 00:00:06.800 bb-25-035:201313:t3 201313:167 A man is jumping on a trampoline and falls
+00:00:06.800 00:00:11.100 bb-25-035:201313:t4 201313:268 A man is talking to a woman and she is smiling
+00:00:11.100 00:00:14.233 bb-25-035:201313:t5 201313:379 A man is jumping over a fence and falls
+00:00:14.233 00:00:18.733 bb-25-035:201313:t6 201313:493 A man is jumping on a trampoline and falls
+00:00:18.733 00:00:20.200 bb-25-035:201313:t7 201313:583 A man is running through a forest and then falls
+00:00:20.200 00:00:22.533 bb-25-035:201313:t8 201313:640 A man is looking at something and then looks away
+00:00:22.533 00:00:24.166 bb-25-035:201313:t9 201313:699 A man is sitting on a bench in a field
+00:00:24.167 00:00:25.200 bb-25-035:201313:t10 201313:740 A man is looking at something and then looks away
+00:00:25.200 00:00:26.800 bb-25-035:201313:t11 201313:779 A man is jumping on a skateboard and then slides down a rail
+00:00:26.800 00:00:28.900 bb-25-035:201313:t12 201313:835 A bear is walking through the woods and a bird is on the back
+00:00:28.900 00:00:29.967 bb-25-035:201313:t13 201313:883 A man is playing a guitar and singing
+00:00:29.967 00:00:31.734 bb-25-035:201313:t14 201313:925 A man is lying on the ground and looking around
+00:00:31.733 00:00:32.733 bb-25-035:201313:t15 201313:966 A group of people are playing soccer in a field
+00:00:00.000 00:00:03.567 bb-25-035:201500:t0 201500:53 A woman is talking to a man who is sitting in a chair
+00:00:03.567 00:00:05.467 bb-25-035:201500:t1 201500:135 A man in a suit is smiling and talking
+00:00:05.467 00:00:07.067 bb-25-035:201500:t2 201500:188 A woman is talking to a man who is sitting in a chair
+00:00:07.067 00:00:09.534 bb-25-035:201500:t3 201500:249 A man in a suit is walking down a hallway
+00:00:09.533 00:00:11.800 bb-25-035:201500:t4 201500:319 A woman is talking to a man and he is talking to her
+00:00:11.800 00:00:15.600 bb-25-035:201500:t5 201500:411 A woman sitting on a bench in a mall
+00:00:15.600 00:00:17.733 bb-25-035:201500:t6 201500:499 A man is putting his hand on a woman s face
+00:00:17.733 00:00:19.766 bb-25-035:201500:t7 201500:561 A man in a suit is smiling and waving
+00:00:19.767 00:00:21.700 bb-25-035:201500:t8 201500:621 A woman is talking to a man and he is smiling
+00:00:21.700 00:00:25.200 bb-25-035:201500:t9 201500:703 A man in a suit is smiling and talking
+00:00:25.200 00:00:32.167 bb-25-035:201500:t10 201500:860 A woman is talking to a man and he is smiling
+00:00:32.167 00:00:35.334 bb-25-035:201500:t11 201500:1012 A man is sitting on a couch and is talking to someone
+00:00:35.333 00:00:37.000 bb-25-035:201500:t12 201500:1084 A woman is walking down a street while talking on her phone
+00:00:37.000 00:00:38.667 bb-25-035:201500:t13 201500:1135 A man is looking at a woman and smiling
+00:00:38.667 00:00:39.934 bb-25-035:201500:t14 201500:1179 A woman is walking down a street while holding a glass
+00:00:39.933 00:00:45.866 bb-25-035:201500:t15 201500:1286 A man in a suit and tie standing in front of a window
+00:00:45.867 00:00:49.334 bb-25-035:201500:t16 201500:1427 A man is jumping over a ramp on a skateboard
+00:00:00.000 00:00:03.400 bb-25-035:203409:t0 203409:50 A man is looking through a door and then he opens his door
+00:00:03.400 00:00:05.233 bb-25-035:203409:t1 203409:129 A man is sitting in a chair and playing a guitar
+00:00:05.233 00:00:09.900 bb-25-035:203409:t2 203409:226 A man is dancing in a room with a lot of people
+00:00:09.900 00:00:16.633 bb-25-035:203409:t3 203409:397 A man is sitting on a couch and is talking to someone
+00:00:16.633 00:00:19.633 bb-25-035:203409:t4 203409:543 A man is sitting in a chair and smiling
+00:00:19.633 00:00:21.933 bb-25-035:203409:t5 203409:622 A woman is standing in front of a window and talking
+00:00:21.933 00:00:25.733 bb-25-035:203409:t6 203409:714 A man is sitting in a chair and smiling
+00:00:25.733 00:00:30.166 bb-25-035:203409:t7 203409:837 A woman is dancing in front of a mirror
+00:00:30.167 00:00:32.567 bb-25-035:203409:t8 203409:941 A man is sitting in a chair and smiling
+00:00:32.567 00:00:34.700 bb-25-035:203409:t9 203409:1008 A woman is blowing smoke out of her mouth
+00:00:34.700 00:00:36.300 bb-25-035:203409:t10 203409:1065 A man is sitting on a couch and talking
+00:00:36.300 00:00:38.333 bb-25-035:203409:t11 203409:1119 A man is talking to a woman in a room
+00:00:38.333 00:00:40.633 bb-25-035:203409:t12 203409:1183 A man is sitting in a chair and smiling
+00:00:40.633 00:00:42.833 bb-25-035:203409:t13 203409:1251 A woman is looking at a man and then he looks away
+00:00:42.833 00:00:45.833 bb-25-035:203409:t14 203409:1329 A man is dancing in front of a woman
+00:00:45.833 00:00:47.900 bb-25-035:203409:t15 203409:1405 A woman is looking at something and then looks away
+00:00:47.900 00:00:55.900 bb-25-035:203409:t16 203409:1556 A man is looking at a woman and smiling
+00:00:55.900 00:00:58.367 bb-25-035:203409:t17 203409:1714 A woman is looking at a man and then he looks away
+00:00:58.367 00:01:00.534 bb-25-035:203409:t18 203409:1783 A man is dancing in a room with a woman
+00:01:00.533 00:01:07.500 bb-25-035:203409:t19 203409:1919 A woman is looking at something and then looks away
+00:00:00.000 00:00:03.700 bb-25-035:203614:t0 203614:55 A car is driving down a road
+00:00:03.700 00:00:06.667 bb-25-035:203614:t1 203614:155 A man is jumping on a trampoline and falls
+00:00:06.667 00:00:08.500 bb-25-035:203614:t2 203614:227 A man is dancing in a room with a woman
+00:00:08.500 00:00:12.233 bb-25-035:203614:t3 203614:310 A man is walking down a street and then stops
+00:00:12.233 00:00:13.900 bb-25-035:203614:t4 203614:391 A woman is smiling and waving her hand
+00:00:13.900 00:00:18.033 bb-25-035:203614:t5 203614:478 A woman is talking to a man and he is talking to him
+00:00:18.033 00:00:21.666 bb-25-035:203614:t6 203614:594 A man is sitting in a car and smiling
+00:00:21.667 00:00:23.700 bb-25-035:203614:t7 203614:680 A man is sitting in a car and talking to someone
+00:00:23.700 00:00:25.633 bb-25-035:203614:t8 203614:739 A man is driving a car and talking on a phone
+00:00:25.633 00:00:31.300 bb-25-035:203614:t9 203614:853 A man is sitting in a car and smiling
+00:00:31.300 00:00:40.033 bb-25-035:203614:t10 203614:1069 A woman is talking to a man and he is talking to him
+00:00:40.033 00:00:45.300 bb-25-035:203614:t11 203614:1279 A man is sitting in a car and smiling
+00:00:45.300 00:00:47.867 bb-25-035:203614:t12 203614:1397 A woman is talking to a man and he is talking to her
+00:00:47.867 00:00:49.534 bb-25-035:203614:t13 203614:1461 A man is sitting in a car and smiling
+00:00:49.533 00:00:51.433 bb-25-035:203614:t14 203614:1513 A woman is walking down a runway
+00:00:51.433 00:00:53.900 bb-25-035:203614:t15 203614:1579 A man is talking to someone in the car
+00:00:53.900 00:00:55.700 bb-25-035:203614:t16 203614:1643 A man is putting his hand on his head
+00:00:55.700 00:00:56.833 bb-25-035:203614:t17 203614:1687 A man is putting his hand on his head
+00:00:56.833 00:00:58.300 bb-25-035:203614:t18 203614:1726 A man is walking down a street and then he stops
+00:00:00.000 00:00:07.767 bb-25-035:203701:t0 203701:116 A woman is walking down a path with a child
+00:00:07.767 00:00:11.467 bb-25-035:203701:t1 203701:288 A woman is walking and then she stops and looks at her phone
+00:00:11.467 00:00:16.400 bb-25-035:203701:t2 203701:417 A woman is walking down a path with a man
+00:00:16.400 00:00:19.600 bb-25-035:203701:t3 203701:539 A woman is dancing in a room
+00:00:19.600 00:00:22.100 bb-25-035:203701:t4 203701:625 A young girl is dancing in a garden
+00:00:22.100 00:00:28.200 bb-25-035:203701:t5 203701:754 A woman is talking to a man and he is smiling
+00:00:28.200 00:00:29.867 bb-25-035:203701:t6 203701:871 A man and a woman are walking down a path
+00:00:29.867 00:00:32.000 bb-25-035:203701:t7 203701:927 A man is dancing in front of a woman
+00:00:32.000 00:00:33.200 bb-25-035:203701:t8 203701:977 A cat is jumping into a room and falls
+00:00:33.200 00:00:35.100 bb-25-035:203701:t9 203701:1024 A woman is dancing in a room
