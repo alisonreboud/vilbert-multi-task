@@ -87,7 +87,7 @@ def main():
                   for i, fid in enumerate(frameIds):
                      cap.set(cv2.CAP_PROP_POS_FRAMES, int(fid))
                      ret, frame = cap.read()
-                     file_name = os.path.join(args.output_folder, str(vid_id) + '_' + str(i) + '.jpg')
+                     file_name = os.path.join(args.output_folder, str(vid_id) + '_' + str(fid) + '.jpg')
                      #print('shape:', frame.shape)
                      #print('size:', frame.size)
                      #print('--- arr ---\n', frame, '\n--- end ---')
