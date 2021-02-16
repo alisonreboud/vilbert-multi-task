@@ -111,7 +111,7 @@ Use this script to extract frames from the video.
 ```
 python script/ME/extract_frames.py --output_folder <output_folder> --video_dir <video_dir> --frames <frames>
 ```
-Use the `frames` parameter for the number of frames to be extracted (default is 1 i.e., the middle frame of the video). The extracted frames are saved as `<output_folder>/<video-id>_<frame_count>.jpg` where `<frame_count>` in `[0..<frames>-1]` (and `<output_folder>/<video-id>.jpg` when extracting only one frame). Keep this structure since it is used by the `script/ME/average_features.py` or `script/extract_features.py` scripts.
+Use the `frames` parameter for the number of frames to be extracted (default is 1 i.e., the middle frame of the video). The extracted frames are saved as `<output_folder>/<video-id>_<frame_count>.jpg` where `<frame_count>` in `[0..<frames>-1]` (and `<output_folder>/<video-id>.jpg` when extracting only one frame). Otherwise pass a list of frames you want to be extracted with `frame_list` parameter, which is a link to a csv file with columns=video_name, frame. Keep this structure since it is used by the `script/ME/average_features.py` or `script/extract_features.py` scripts.
 Make sure to have writing permission for the `output_folder`. Otherwise, here is an example to use
 ```
 sudo /home/<user>/miniconda3/envs/vilbert-mt/bin/python script/ME/extract_frames.py --output_folder /MediaEval/dev-set/source_output --video_dir /MediaEval/dev-set/sources --frames 1 
