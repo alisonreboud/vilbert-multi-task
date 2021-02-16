@@ -91,11 +91,7 @@ python train_tasks.py --bert_model bert-base-uncased --from_pretrained <multi_ta
 ## MediaEval Task
 
 ### Transfer Learning
-In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen. The ME training dataset (8,000 samples) is fed to the model and the visual and textual representations are written to `--rep_save_path` so they can be used later to train a regressor. For this you need to have prepared the captions (see below, captions_preparation.py) and extracted visual features as explained below. The path to captions is not passed as an argument here but is created in /datasets/me_dataset.py ( combination of dataroot in yaml file and hard coded things). If file does not exist, another task is called, so be careful with this. Todo = Change the code here adding more complete error messages
-
-```
-python script/ME/vilbert_representations.py --bert_model bert-base-uncased --from_pretrained save/VQA_bert_base_6layer_6conect-finetune_from_multi_task_model-task_1/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --split trainval --batch_size 128 --task_specific_tokens --rep_save_path datasets/ME/out_features/train_features.pkl
-```
+In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen. 
 
 ### Training the Regressor Separately
 This part was fully made in both `ME_train_reg_test-set.ipynb` and `ME_train_reg_folds.ipynb` notebooks. The only difference is the evaluation process. i.e., for the first training was performed on the whole dev-set and the evaluation on test-set. While for the second, 4 splits were used as explaned in the report.
@@ -130,7 +126,16 @@ python script/ME/average_features.py --features_dir <path_to_directory_with_feat
 ```
 ### Convert Visual Feature Vectors to lmdb
 ```
-python script/convert_to_lmdb.py  ----features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file>
+python script/convert_to_lmdb.py  ----features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file> 
+```
+
+### Get Vilbert representation
+
+The ME training dataset (8,000 samples) is fed to the model and the visual and textual representations are written to `--rep_save_path` so they can be used later to train a regressor. For this you need to have prepared the captions (see below, captions_preparation.py) and extracted visual features as explained below. The path to captions is not passed as an argument here but is created in /datasets/me_dataset.py ( combination of dataroot in yaml file and hard coded things). If file does not exist, another task is called, so be careful with this. Todo = Change the code here adding more complete error messages
+
+```
+python script/ME/vilbert_representations.py --bert_model bert-base-uncased --from_pretrained save/VQA_bert_base_6layer_6conect-finetune_from_multi_task_model-task_1/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --split trainval --batch_size 128 --task_specific_tokens --rep_save_path datasets/ME/out_features/train_features.pkl
+```
 ```
 
 
