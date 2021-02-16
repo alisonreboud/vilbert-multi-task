@@ -137,7 +137,9 @@ python script/ME/vilbert_representations.py --bert_model bert-base-uncased --fro
 ```
 
 
-### End-to-end Training
+## End-to-end Training and Evaluation
+### Training
+
 Training the Multi-task model for ME
 ```
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained models/multi_task_model.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model-task_19-all_train-BASE --lr_scheduler 'warmup_linear'
@@ -151,7 +153,7 @@ Training the NLVR2 fine-tuned model for ME
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained save/NLVR2_bert_base_6layer_6conect-finetune_from_multi_task_model-task_12/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model-task_19-all_train-NLVR2 --lr_scheduler 'warmup_linear'
 ```
 
-### End-to-end Evaluating
+### Evaluating
 Evaluate the Multi-task model previously trained for ME
 ```
 python script/ME/eval_ME.py --bert_model bert-base-uncased --config_file config/bert_base_6layer_6conect.json --tasks 19 --split test --task_specific_tokens --batch_size 128 --from_pretrained save/ME_bert_base_6layer_6conect-finetune_from_multi_task_model-task_19-all_train-BASE/pytorch_model_12.bin
