@@ -88,9 +88,8 @@ python train_tasks.py --bert_model bert-base-uncased --from_pretrained <pretrain
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained <multi_task_model_path> --config_file config/bert_base_6layer_6conect.json --tasks 1 --lr_scheduler 'warmup_linear' --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model
 ```
  
-## MediaEval Task
+## Vilbert features extraction
 
-### Transfer Learning
 In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen. 
 
 ### Training the Regressor Separately
