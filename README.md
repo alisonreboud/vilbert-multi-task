@@ -135,7 +135,6 @@ The ME training dataset (8,000 samples) is fed to the model and the visual and t
 ```
 python script/ME/vilbert_representations.py --bert_model bert-base-uncased --from_pretrained save/VQA_bert_base_6layer_6conect-finetune_from_multi_task_model-task_1/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --split trainval --batch_size 128 --task_specific_tokens --rep_save_path datasets/ME/out_features/train_features.pkl
 ```
-```
 
 
 ### End-to-end Training
