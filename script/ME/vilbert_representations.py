@@ -170,7 +170,7 @@ parser.add_argument(
 parser.add_argument(
     "--baseline", action="store_true", help="whether use single stream baseline."
 )
-parser.add_argument("--split", default="trainval", type=str, help="which split to use.")
+parser.add_argument("--split", default="val", type=str, help="which split to use.")
 parser.add_argument(
     "--dynamic_attention",
     action="store_true",
@@ -377,7 +377,7 @@ pooled_output_v = torch.cat(pooled_output_v_list, 0)
 concat_pooled_output = torch.cat([pooled_output_t, pooled_output_v], 1)
 targets = torch.cat(targets_list, 0)
 
-rep_save_path = "datasets/ME/out_features/train_features_VQA.pkl"
+#rep_save_path = "datasets/ME/out_features/train_features_VQA.pkl"
 
 
 # In[15]:

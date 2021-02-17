@@ -93,7 +93,7 @@ def ForwardModelsVal(args, task_cfg, device, task_id, batch, model, task_losses)
         batch_size = features.size(0)
         max_num_bbox = features.size(1)
         num_options = question.size(1)
-        features = features.view(
+        features = featurestyp.view(
             batch_size * 2, int(features.size(1) / 2), features.size(2)
         )
         spatials = spatials.view(
@@ -493,6 +493,7 @@ def LoadDatasets(args, task_cfg, ids, split="trainval"):
                 padding_index=0,
                 max_seq_length=task_cfg[task]["max_seq_length"],
                 max_region_num=task_cfg[task]["max_region_num"],
+                captions_dir=task_cfg[task]["captions_dir"]
             )
 
         task_datasets_val[task] = None
@@ -514,6 +515,7 @@ def LoadDatasets(args, task_cfg, ids, split="trainval"):
                 padding_index=0,
                 max_seq_length=task_cfg[task]["max_seq_length"],
                 max_region_num=task_cfg[task]["max_region_num"],
+                captions_dir=task_cfg[task]["captions_dir"]
             )
 
         task_num_iters[task] = 0
@@ -625,6 +627,7 @@ def LoadDatasetEval(args, task_cfg, ids):
             padding_index=0,
             max_seq_length=task_cfg[task]["max_seq_length"],
             max_region_num=task_cfg[task]["max_region_num"],
+            captions_dir=task_cfg[task]["captions_dir"]
         )
 
         task_dataloader_val[task] = DataLoader(
@@ -673,7 +676,7 @@ def EvaluatingModel(
         features, spatials, image_mask, question, target, input_mask, segment_ids, multiple_choice_ids, co_attention_mask, question_id = (
             batch
         )
-    elif task_id == "TASK19":
+    elif task_id == "TASK19"or task_id == "TASK20":
         features, spatials, image_mask, question, target, input_mask, segment_ids, co_attention_mask = (
             batch
         )
@@ -907,7 +910,10 @@ def EvaluatingModel(
         loss = task_losses[task_id](vil_tri_prediction, target)
         loss = loss.mean()
         batch_score = compute_score_with_logits(vil_tri_prediction, target).sum()
+    else:
+        loss = 0
+        batch_score = 0
     
-    if task_id == "TASK19":
+    if task_id == "TASK19" or task_id == "TASK20" :
         return float(loss), float(batch_score), batch_size, results, others, target, vil_score_prediction
     return float(loss), float(batch_score), batch_size, results, others

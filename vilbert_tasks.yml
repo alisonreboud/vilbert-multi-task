@@ -17,6 +17,7 @@ TASK1:
   val_split: minval
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK2:
   name: GenomeQA
   type: VL-classifier
@@ -36,6 +37,7 @@ TASK2:
   val_split: val
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK3:
   name: VisualDialog
   type: VL-logit
@@ -54,6 +56,7 @@ TASK3:
   val_split: val
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK4:
   name: Visual7w
   type: V-logit-mc
@@ -72,6 +75,7 @@ TASK4:
   val_split: val
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK5:
   name: VCR_Q-A
   type: VL-logit
@@ -90,6 +94,7 @@ TASK5:
   val_split: val
   lr: 0.00002
   num_epoch: 10
+  captions_dir: ''
 TASK6:
   name: VCR_QA-R
   type: VL-logit
@@ -108,6 +113,7 @@ TASK6:
   val_split: val
   lr: 0.00002
   num_epoch: 10
+  captions_dir: ''
 TASK7:
   name: RetrievalCOCO
   type: VL-logit
@@ -126,6 +132,7 @@ TASK7:
   val_split: val
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK8:
   name: RetrievalFlickr30k
   type: VL-logit
@@ -144,6 +151,7 @@ TASK8:
   val_split: val
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK9:
   name: refcoco
   type: V-logit
@@ -162,6 +170,7 @@ TASK9:
   val_split: val
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK10:
   name: refcoco+
   type: V-logit
@@ -181,6 +190,7 @@ TASK10:
   val_split: val
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK11:
   name: refcocog
   type: V-logit
@@ -200,6 +210,7 @@ TASK11:
   start_iteration: 0
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK12:
   name: NLVR2
   type: VL-binary-classifier
@@ -219,6 +230,7 @@ TASK12:
   val_split: dev
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK13: 
   name: VisualEntailment
   type: VL-tri-classifier
@@ -238,6 +250,7 @@ TASK13:
   val_split: dev
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK14:
   name: GuessWhat
   type: VL-tri-classifier
@@ -257,6 +270,7 @@ TASK14:
   val_split: valid
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK15:
   name: GQA
   type: VL-classifier-GQA
@@ -276,6 +290,7 @@ TASK15:
   val_split: minval
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK16:
   name: Foil
   type: VL-binary-classifier
@@ -295,6 +310,7 @@ TASK16:
   val_split: val
   lr: 0.00004
   num_epoch: 20
+  captions_dir: ''
 TASK17:
   name: GuessWhatPointing
   type: V-logit-mc
@@ -313,6 +329,7 @@ TASK17:
   val_split: valid
   lr: 0.00002
   num_epoch: 20
+  captions_dir: ''
 TASK18:
   name: FlickrGrounding
   type: V-logit
@@ -331,6 +348,7 @@ TASK18:
   val_split: val
   lr: 0.000002
   num_epoch: 20
+  captions_dir: ''
 TASK19:
   name: ME
   type: VL-regressor
@@ -350,3 +368,24 @@ TASK19:
   val_split: test
   lr: 0.00004
   num_epoch: 50
+  captions_dir: ''
+TASK20:
+  name: Feature-extraction
+  type: skip
+  loss: MSELoss
+  process: normal
+  task_id: 20
+  dataroot: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/
+  features_h5path1: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/features/resnext152_faster_rcnn_genome.lmdb
+  features_h5path2: ''
+  train_annotations_jsonpath: ''
+  val_annotations_jsonpath: ''
+  max_seq_length: 23
+  max_region_num: 101
+  batch_size: 32
+  eval_batch_size: 1024
+  train_split: trainval
+  val_split: test
+  lr: 0.00004
+  num_epoch: 50
+  captions_dir: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/prepared_captions.pkl
