@@ -88,14 +88,9 @@ python train_tasks.py --bert_model bert-base-uncased --from_pretrained <pretrain
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained <multi_task_model_path> --config_file config/bert_base_6layer_6conect.json --tasks 1 --lr_scheduler 'warmup_linear' --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model
 ```
  
-## MediaEval Task
+## Vilbert features extraction
 
-### Transfer Learning
-In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen. The ME training dataset (8,000 samples) is fed to the model and the visual and textual representations are written to `--rep_save_path` so they can be used later to train a regressor. For this you need to have prepared the captions (see below, captions_preparation.py) and extracted visual features as explained below. The path to captions is not passed as an argument here but is created in /datasets/me_dataset.py ( combination of dataroot in yaml file and hard coded things). If file does not exist, another task is called, so be careful with this. Todo = Change the code here adding more complete error messages
-
-```
-python script/ME/vilbert_representations.py --bert_model bert-base-uncased --from_pretrained save/VQA_bert_base_6layer_6conect-finetune_from_multi_task_model-task_1/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --split trainval --batch_size 128 --task_specific_tokens --rep_save_path datasets/ME/out_features/train_features.pkl
-```
+In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen. 
 
 ### Training the Regressor Separately
 This part was fully made in both `ME_train_reg_test-set.ipynb` and `ME_train_reg_folds.ipynb` notebooks. The only difference is the evaluation process. i.e., for the first training was performed on the whole dev-set and the evaluation on test-set. While for the second, 4 splits were used as explaned in the report.
@@ -111,7 +106,7 @@ Use this script to extract frames from the video.
 ```
 python script/ME/extract_frames.py --output_folder <output_folder> --video_dir <video_dir> --frames <frames>
 ```
-Use the `frames` parameter for the number of frames to be extracted (default is 1 i.e., the middle frame of the video). The extracted frames are saved as `<output_folder>/<video-id>_<frame_count>.jpg` where `<frame_count>` in `[0..<frames>-1]` (and `<output_folder>/<video-id>.jpg` when extracting only one frame). Keep this structure since it is used by the `script/ME/average_features.py` or `script/extract_features.py` scripts.
+Use the `frames` parameter for the number of frames to be extracted (default is 1 i.e., the middle frame of the video). The extracted frames are saved as `<output_folder>/<video-id>_<frame_count>.jpg` where `<frame_count>` in `[0..<frames>-1]` (and `<output_folder>/<video-id>.jpg` when extracting only one frame). Otherwise pass a list of frames you want to be extracted with `frame_list` parameter, which is a link to a csv file with columns=video_name, frame. Keep this structure since it is used by the `script/ME/average_features.py` or `script/extract_features.py` scripts.
 Make sure to have writing permission for the `output_folder`. Otherwise, here is an example to use
 ```
 sudo /home/<user>/miniconda3/envs/vilbert-mt/bin/python script/ME/extract_frames.py --output_folder /MediaEval/dev-set/source_output --video_dir /MediaEval/dev-set/sources --frames 1 
@@ -130,11 +125,21 @@ python script/ME/average_features.py --features_dir <path_to_directory_with_feat
 ```
 ### Convert Visual Feature Vectors to lmdb
 ```
-python script/convert_to_lmdb.py  ----features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file>
+python script/convert_to_lmdb.py  ----features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file> 
+```
+
+### Get Vilbert representation
+
+The ME training dataset (8,000 samples) is fed to the model and the visual and textual representations are written to `--rep_save_path` so they can be used later to train a regressor. For this you need to have prepared the captions (see below, captions_preparation.py) and extracted visual features as explained below. The path to captions is not passed as an argument here but is created in vilbert/datasets/me_dataset.py ( combination of dataroot in yaml file and hard coded things). If file does not exist, another task is called, so be careful with this. Todo = Change the code here adding more complete error messages
+
+```
+python script/ME/vilbert_representations.py --bert_model bert-base-uncased --from_pretrained save/VQA_bert_base_6layer_6conect-finetune_from_multi_task_model-task_1/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --split trainval --batch_size 128 --task_specific_tokens --rep_save_path datasets/ME/out_features/train_features.pkl
 ```
 
 
-### End-to-end Training
+## End-to-end Training and Evaluation
+### Training
+
 Training the Multi-task model for ME
 ```
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained models/multi_task_model.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model-task_19-all_train-BASE --lr_scheduler 'warmup_linear'
@@ -148,7 +153,7 @@ Training the NLVR2 fine-tuned model for ME
 python train_tasks.py --bert_model bert-base-uncased --from_pretrained save/NLVR2_bert_base_6layer_6conect-finetune_from_multi_task_model-task_12/pytorch_model_19.bin --config_file config/bert_base_6layer_6conect.json --tasks 19 --train_iter_gap 4 --task_specific_tokens --save_name finetune_from_multi_task_model-task_19-all_train-NLVR2 --lr_scheduler 'warmup_linear'
 ```
 
-### End-to-end Evaluating
+### Evaluating
 Evaluate the Multi-task model previously trained for ME
 ```
 python script/ME/eval_ME.py --bert_model bert-base-uncased --config_file config/bert_base_6layer_6conect.json --tasks 19 --split test --task_specific_tokens --batch_size 128 --from_pretrained save/ME_bert_base_6layer_6conect-finetune_from_multi_task_model-task_19-all_train-BASE/pytorch_model_12.bin
