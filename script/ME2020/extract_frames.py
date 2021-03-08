@@ -83,7 +83,7 @@ def main():
                   print(vid_id)
                   frameIds=df['frame'][df['video']==int(vid_id)].tolist()
                   #print(frameIds)
-                  print('HEEEEERE')
+                  #print('HEEEEERE')
                   for i, fid in enumerate(frameIds):
                      cap.set(cv2.CAP_PROP_POS_FRAMES, int(fid))
                      ret, frame = cap.read()
@@ -103,7 +103,7 @@ def main():
             working = False 
             while not working:
                try:
-                  print('THEEEEERE')
+                  #print('THEEEEERE')
                   frameIds = (cap.get(cv2.CAP_PROP_FRAME_COUNT) - 1) * np.array([(1.0+i) / (args.frames + 1) for i in range(args.frames)])
                   print(frameIds)
                   for i, fid in enumerate(frameIds):

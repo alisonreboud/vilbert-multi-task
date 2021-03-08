@@ -375,8 +375,8 @@ TASK20:
   loss: MSELoss
   process: normal
   task_id: 20
-  dataroot: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/
-  features_h5path1: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/features/resnext152_faster_rcnn_genome.lmdb
+  dataroot: /SSD/reboud/vilbert-multi-task/Surrey/
+  features_h5path1: /SSD/reboud/vilbert-multi-task/Surrey/features/resnext152_faster_rcnn_genome.lmdb
   features_h5path2: ''
   train_annotations_jsonpath: ''
   val_annotations_jsonpath: ''
@@ -388,4 +388,4 @@ TASK20:
   val_split: test
   lr: 0.00004
   num_epoch: 50
-  captions_dir: /SSD/reboud/vilbert-multi-task/memad_content_segmentation/prepared_captions.pkl
+  captions_dir: /SSD/reboud/vilbert-multi-task/Surrey/prepared_captions_surrey.pkl
