@@ -96,7 +96,7 @@ In this part, the fine-tuned (VQA or NLVR2) model wights are being frozen.
 This part was fully made in both `ME_train_reg_test-set.ipynb` and `ME_train_reg_folds.ipynb` notebooks. The only difference is the evaluation process. i.e., for the first training was performed on the whole dev-set and the evaluation on test-set. While for the second, 4 splits were used as explaned in the report.
 
 ### Prepare (Deep) Caption
-Preparing (deep) captions consists of loading video IDs and captions from the `.txt` or `.csv` file, add the ground truth (scores), tokenize, tensorize and save the cache file. Add `--dc` parameters if using deep captions. An example of using this script
+Preparing (deep) captions consists of loading video IDs and captions from the `.txt` or `.csv` file ( needs a 'video_id' and 'caption' columns), add the ground truth (scores), tokenize, tensorize and save the cache file. Add `--dc` parameters if using deep captions. An example of using this script. 
 ```
 python script/feature_extraction/captions_preparation.py --captions_path Surrey/captions_clean.csv --output_path Surrey/prepared_captions_surrey
 
