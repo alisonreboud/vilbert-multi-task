@@ -23,6 +23,8 @@ def tokenize(entries, tokenizer, max_length=16, padding_index=0):
     -1 represent nil, and should be treated as padding_index in embedding
     """
     for entry in entries:
+        print(entry['video_id'])
+        print(entry['caption'])
         tokens = tokenizer.encode(entry["caption"])
         tokens = tokens[: max_length - 2]
         tokens = tokenizer.add_special_tokens_single_sentence(tokens)

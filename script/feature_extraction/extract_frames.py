@@ -10,6 +10,24 @@ import argparse
 import pandas as pd 
 
 
+def count_frames_manual(video):
+    # initialize the total number of frames read
+    total = 0
+    # loop over the frames of the video
+    while True:
+        # grab the current frame
+        print('la')
+        (grabbed, frame) = video.read()
+# check to see if we have reached the end of the
+# video
+        if not grabbed:
+            break
+# increment the total number of frames read
+        total += 1
+    # return the total number of frames in the video file
+    return total
+
+
 def main():
     parser = argparse.ArgumentParser()
     
@@ -54,6 +72,7 @@ def main():
 
 
     for k, filename in enumerate(tqdm(os.listdir(args.video_dir))):
+        #filename='/data/moviescope/trailers_mp4/1197.mp4'
         if filename.endswith(".mp4") :
             vid_id = filename.split('.mp4')[0]
         elif filename.endswith(".webm"):
@@ -103,9 +122,20 @@ def main():
             working = False 
             while not working:
                try:
-                  print('THEEEEERE')
-                  frameIds = (cap.get(cv2.CAP_PROP_FRAME_COUNT) - 1) * np.array([(1.0+i) / (args.frames + 1) for i in range(args.frames)])
-                  print(frameIds)
+                  #print('THEEEEERE')
+         
+                  frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+                  print(frame_count)
+                  #frame_count = count_frames_manual(cap)
+                
+                  if frame_count == 0.0:
+                      print('we are here')
+                      frame_count = count_frames_manual(cap)
+                      print(frame_count)
+
+                  frameIds = (frame_count - 1) * np.array([(1.0+i) / (args.frames + 1) for i in range(args.frames)])
+                  #print(frameIds)
+                  #print(frameIds)
                   for i, fid in enumerate(frameIds):
                      cap.set(cv2.CAP_PROP_POS_FRAMES, int(fid))
                      ret, frame = cap.read()
@@ -116,9 +146,24 @@ def main():
                      cv2.imwrite(file_name, frame)
                   working = True
                except:
+                  
+                  print(frame_count)
+                  print(filename) 
                   print('Exception with', cap.get(cv2.CAP_PROP_FRAME_COUNT), cap.get(cv2.CAP_PROP_FPS), frameIds)
                   raise Exception('Exception')
-
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
 
 

@@ -69,6 +69,7 @@ def main():
                       working = True
                    except:
                       print('Exception with', cap.get(cv2.CAP_PROP_FRAME_COUNT), cap.get(cv2.CAP_PROP_FPS), frameIds)
+                      print(filename)
                       raise Exception('Exception')
 
 if __name__ == "__main__":
