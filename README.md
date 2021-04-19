@@ -127,7 +127,7 @@ python script/ME/average_features.py --features_dir <path_to_directory_with_feat
 ```
 ### Convert Visual Feature Vectors to lmdb
 ```
-python script/convert_to_lmdb.py  ----features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file> 
+python script/convert_to_lmdb.py  --features_dir <path_to_directory_with_features> --lmdb_file  <path_to_output_lmdb_file> 
 ```
 
 ### Get Vilbert representation
